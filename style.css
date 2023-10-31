@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: 99vh;
+    justify-items: stretch;
+
+
+}
+
+.sidebar > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+}
+
+
+.header {
+    background-color: coral;
+}
+
+.main-content {
+    background-color: lightpink;
+}
+
+.bell {
+    width: 100px;
+    height: auto
+}
+
+* {
+    font-family: Roboto;
+}
+
+.sidebar > div > img {
+    width: 25px;
+    height: auto;
+    justify-self: end;
+}
