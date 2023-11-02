@@ -1,45 +1,52 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    height: 99vh;
 }
 
 .sidebar {
     background-color: aquamarine;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    height: 99vh;
-    justify-items: stretch;
-
-
-}
-
-.sidebar > div {
+    grid-area: 1 / 1 / 3 / 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-self: center;
+    grid-template-rows: 1fr 4fr 4fr;
 }
+
 
 
 .header {
     background-color: coral;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .main-content {
     background-color: lightpink;
 }
 
-.bell {
-    width: 100px;
-    height: auto
-}
-
 * {
     font-family: Roboto;
 }
 
-.sidebar > div > img {
-    width: 25px;
-    height: auto;
-    justify-self: end;
+.sidebar-group-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6,0.1fr);
+    grid-area: 2 / 1 / 3 / 3;
+    padding-left: 25px;
+    align-content: center;
 }
+
+.sidebar-group-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,0.1fr);
+    align-content: center;
+    grid-area: 3 / 1 / 4 / 3 ;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
