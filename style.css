@@ -21,7 +21,11 @@
 }
 
 .main-content {
-    background-color: lightpink;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 4fr 4fr;
+    grid-area: 2 / 2 / -1 / -1;
 }
 
 * {
@@ -160,9 +164,140 @@ button {
     background-color: #1992d4;
     border: none;
     color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .button-div {
     justify-self: center;
+    height: 50%;
+    width: 50%
 
+}
+.your-projects {
+    grid-area: 1 / 1 / -1 / 2
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 96%;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr;
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    border-left: 8px solid #f0b429;
+    border-radius: 10px;
+    padding-left: 12px;
+
+
+}
+
+.icons {
+    display: flex;
+    justify-content: end;
+}
+
+.right-top {
+
+}
+
+.annoucements {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    align-content: center;
+    margin-right: 10px;
+}
+
+.annoucement {
+    border-bottom: 1px solid black;
+}
+
+.cards-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+.project-text {
+    width:80%;
+    font-size: 24px;
+}
+
+.right-header {
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.trendings {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    align-content: center;
+    margin-right: 10px;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2,1fr);
+    width: 100%;
+
+}
+
+.avatar {
+    grid-area: 1 /1 / -1 / 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar > img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sizer {
+    width: 80%;
+    height: 80%
+}
+
+.sizer > img {
+    border-radius: 50%;
+    height: 75%;
+    width: 75%;
+    object-fit: cover;
+}
+
+.handle {
+    align-self: end;
+}
+
+.last-announcement {
+    border-bottom: none;
+}
+
+.card-title {
+    align-self: end;
 }
